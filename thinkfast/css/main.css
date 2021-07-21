@@ -1,0 +1,256 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../images/grey_dark.png);
+	background-color: #2D2D2D;
+
+}
+
+h1 {
+	font-family: calibri;
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 4%;
+	text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+}
+
+table {
+	font-size: 20px;
+	color: #fff;
+	width: 400px;
+	margin-left: 24px;
+}
+
+th {
+	height: 20px;
+}
+
+input {
+	font-family: calibri;
+	color: #2D2D2D;
+	font-size: 14px;
+	border: 1px solid #408c99;
+	background-color: #fff;
+	height: 30px;
+	width: 250px;
+	padding: 4px;
+}
+
+td {
+	margin-left: 40px;	
+}
+
+#namenseingabeFertig{
+	width: 30px;
+    height: 30px;
+	font-family: calibri;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2D2D2D;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 2px;	
+    margin-left: 5px;
+}
+
+#wrapper {
+	background-image: url(../images/ccsplash_bg.jpg);
+	width: 600px;
+	height: 800px;
+	font-family: calibri;
+	color: #fff;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: 60px;
+	padding: 50px; 
+	float: left;
+	background-color: #fff;
+	overflow: auto;
+    position: absolute;
+    border-style: solid;
+    border-color: #040404;    
+    border-radius: 4px;
+}
+
+#logo {
+	background-image: url(../images/logo.png);
+	background-size: 440px 207px;
+	background-repeat: no-repeat;
+
+	width: 440px;
+	height: 207px;
+	margin-top: 60px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#startseitebutton {
+	width: 80px;
+    height: 40px;
+    font-family: calibri;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2D2D2D;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 10;
+    left: 20;
+    margin-right: 20px;
+    float: right;
+}
+
+#startseitebutton:hover {
+	background-color:#408c99;
+}
+
+.zuruckbutton {
+	background-image: url(../images/back.png);
+	width: 50px;
+  height: 50px;
+  background-size: 100%;
+  overflow: hidden;
+  border: solid;
+  border-radius: 3px;
+  position: relative;
+  top: 180px;	 
+}
+
+.zuruckbutton:hover {
+	background-image: url(../images/back_hover.png);	
+	border: solid;
+  border-radius: 3px;
+}
+
+#startbutton, #highscorebutton, #spielanleitung, #startbutton2, #highscorebutton2{
+	width: 350px;
+    height: 90px;
+    font-family: calibri;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2D2D2D;
+    background-color: #fff;
+
+
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 2px;
+
+    margin: auto;
+  	position: absolute;
+}
+
+#startbutton, #startbutton2 {
+  	top: 0; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+}
+
+#highscorebutton, #highscorebutton2 {
+  	top: 250px; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+}
+
+#spielanleitung {
+  	top: 500px; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+}
+
+#startbutton:hover, #highscorebutton:hover, #spielanleitung:hover, #startbutton2:hover, #highscorebutton2:hover {
+	background-color:#408c99;
+}
+
+#bild0 {
+	width: 300px;
+    height: 300px;
+}
+
+.bildgross{
+	width: 300px;
+    height: 300px;
+    background-color: #FECE74;
+    margin: auto;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.bilderklein{
+	width: 150px;
+    height: 150px;
+    background-color: #FECE74;
+    background-size: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: auto;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    float: left;
+}
+
+.bilderklein img{
+	width: 150px;
+    height: 150px;
+}
+
+#gameover, #spielendebildschirm, #anleitung, #highscoreliste{
+	background: rgba(45, 45, 45, .8);
+	width: 450px;
+	height: 600px;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 20px;
+	text-shadow: rgb(3, 3, 3) 4px 4px 4px;	
+    border-color: rgba(45, 45, 45, .8);   
+    border-radius: 8px;
+}
+
+#timer {
+	font-family: calibri;
+	font-weight: bold;
+	color: #fff;
+	font-size: 70px;
+	text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+	position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+}
+
+#audioAnAus {
+	width: 40px;
+    height: 40px;
+    background-size: 100%;
+    padding: auto;
+    margin-top: -10px;
+    overflow: hidden;
+    border: none;
+    float: right;
+}
+
+
+
+
+

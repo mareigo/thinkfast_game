@@ -1,0 +1,289 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background-image: url(../images/ccsplash_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% ;
+    background-color: #2D2D2D;
+}
+
+h1 {
+	font-family: calibri;
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 0.2em;
+	padding-top: 4%;
+	text-shadow: rgb(3, 3, 3) 0.1em 0.1em 0.1em;
+}
+
+table {
+	font-size: 0.8em;
+	color: #fff;
+	width: 20em;
+	margin-left: 2%;
+}
+
+th {
+	height: auto;
+}
+
+input {
+	font-family: calibri;
+	color: #2D2D2D;
+	font-size: 1em;
+	border: 0.1em solid #408c99;
+	background-color: #fff;
+	height: 2em;
+	width: 12em;
+	padding: 0.2em;
+}
+
+td {
+	margin-left: 2%;	
+}
+
+#namenseingabeFertig{
+	width: 2em;
+    height: 2em;
+	font-family: calibri;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    color: #2D2D2D;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 0.1em;	
+    margin-left: 0.3em;
+}
+
+#logo {
+	background-image: url(../images/logo.png);
+	background-size: 15em auto;
+	background-repeat: no-repeat;
+
+	width: 15em;
+	height: 15em;
+	margin-top: 30%;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#startseitebutton {
+	width: 6em;
+    height: 2em;
+    font-family: calibri;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    color: #2D2D2D;
+    padding: auto;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 0.1em;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    margin-right: 2em;
+    float: right;
+}
+
+#startseitebutton:hover {
+	background-color:#408c99;
+}
+
+#zuruckbutton {
+	background-image: url(../images/back.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 3em;
+    height: 3em;
+
+    padding: auto;
+    overflow: hidden;
+    border: solid;
+    border-radius: 0.2em;
+    border-color: #fff;
+
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    margin-right: 1em;	
+}
+
+#zuruckbutton:hover {
+	background-image: url(../images/back_hover.png);	
+	border: solid;
+	border-color: #fff;
+    border-radius: 0.1em;
+}
+
+#startbutton2, #highscorebutton2 {
+	width: 8em;
+    height: 2.7em;
+    font-family: calibri;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    color: #2D2D2D;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 0.2em;
+    float: left;
+    margin-top: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  	position: absolute;
+}
+
+#startbutton2 {
+  	top: 0; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+}
+
+#highscorebutton2 {
+  	top: 3.3em; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+}
+
+#startbutton, #highscorebutton, #spielanleitung {
+	width: 100%;
+    height: 13%;
+    font-family: calibri;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #2D2D2D;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+
+    margin: auto;
+  	position: absolute;
+}
+
+#startbutton {
+  	top: 0; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+}
+
+#highscorebutton {
+  	top: 35%; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+}
+#spielanleitung {
+  	top: 70%; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+}
+
+#startbutton:hover, #highscorebutton:hover, #spielanleitung:hover, #startbutton2:hover, #highscorebutton2:hover {
+	background-color:#408c99;
+}
+
+.bildgross{
+	width: 10em;
+    height: 10em;
+    background-color: #FECE74;
+    margin-left: auto;
+    margin-right: auto;
+ 	margin-top: 30%;
+    margin-bottom: 1%;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 0.8em;
+    overflow: hidden;
+    padding: auto;
+}
+
+#bild0 img {
+	width: 100%;
+    height: auto;
+}
+
+.bilderklein{
+	width: 5.5em;
+    height: 5.5em;
+    background-color: #FECE74;
+    background-size: 100%;
+    margin-left: 1%;
+    margin-top: 9%;
+    padding: auto;
+
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 0.8em;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.bilderklein img{
+	width: 5.5em;
+    height: 5.5em;
+}
+
+#bild1 img, #bild2 img, #bild3 img {
+	width: 15%;
+    height: 15%;
+}
+
+#gameover, #spielendebildschirm, #anleitung, #highscoreliste{
+	background: rgba(45, 45, 45, .8);
+	width: 88%;
+	height: 60%;
+	color: #fff;
+	font-size: 1em;
+
+	margin-top: 30%;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+	padding: 1em;
+	text-shadow: rgb(3, 3, 3) 0.1em 0.1em 0.1em;	
+
+    border-color: rgba(45, 45, 45, .8);   
+    border-radius: 0.1em;
+    overflow: hidden;
+}
+
+#timer {
+	font-family: calibri;
+	font-weight: bold;
+	color: #fff;
+	font-size: 2.5em;
+	text-shadow: rgb(3, 3, 3) 0.1em 0.1em 0.1em;
+
+	position: absolute;
+    bottom: .2em;
+    right: .2em;
+}
+
+#audioAnAus {
+	width: 4em;
+    height: 4em;
+    background-size: 100%;
+    padding: auto;
+
+    margin-top: -25%;
+    margin-right: 5%;
+    overflow: hidden;
+    border: none;
+    float: right;
+}

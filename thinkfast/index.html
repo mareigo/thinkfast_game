@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title>ThinkFast Game</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script src="javascript/main.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+	<img id="audioAnAus" src="images/volume_on.png" alt="soundButton" onclick="musikAnAus()"/>
+
+	<audio id="soundButton" src="audio/tick.mp3"></audio>
+	<audio id="soundGame" src="audio/uwa.mp3"></audio>
+	<audio id="soundHighscore" src="audio/tada.mp3"></audio>
+	<audio id="soundGameover" src="audio/fail.mp3"></audio>
+	<audio id="soundWrong" src="audio/beep2.mp3"></audio>
+	<audio id="soundTheme" src="audio/mysterious_place.mp3"></audio>
+
+	<div id="startbildschirm"> 
+		<div id ="logo"></div>
+		<button id="startbutton" onclick="neuesSpiel();document.getElementById('soundButton').play()">Start</button>
+		<button id="highscorebutton" onclick="zeigeHighscores();document.getElementById('soundButton').play()">Highscore</button>
+		<button id="spielanleitung" onclick="anleitung();document.getElementById('soundButton').play()">Anleitung</button>
+	</div>	
+		
+	
+	<div id="spielbildschirm" style="display:none">
+		<div class="bildgross"><img id="bild0" alt="bild0" src="images/Farbe/lila.jpg"></div>
+		<div class="bilderklein" onclick="bildKlick(1)"><img id="bild1" alt="bild1" src="images/Farbe/schrift/rot.jpg"></div>
+		<div class="bilderklein" onclick="bildKlick(2)"><img id="bild2" alt="bild2" src="images/Farbe/schrift/schwarz.jpg"></div>
+		<div class="bilderklein" onclick="bildKlick(3)"><img id="bild3" alt="bild2" src="images/Farbe/schrift/lila.jpg"></div>
+		<div class="zuruckbutton" onclick="startseite();document.getElementById('soundButton').play()"></div>
+	</div>
+  	
+  	<span id="timer"></span>
+
+	<div id="spielendebildschirm" style="display:none">
+		<div id="keinhighscore">
+			<h1>Glückwunsch!</h1>
+			<p>Du hast das Spiel in <span id="erreichteZeit"></span> Sekunden gelöst<p>
+		</div>	
+
+		<div id="neuerhighscore" style="display:none">
+			<h1>Neue Bestzeit!</h1>
+			<p>Du hast Platz <span id="erreichterPlatz"></span> erreicht.<p> 
+			<p>Bitte gib deinen Namen ein:<p>
+			<input id="namenseingabe" type="text" maxlength="12" onkeydown="if (event.keyCode == 13) document.getElementById('namenseingabeFertig').click()"/><input onclick="namenseingabeFertig_click()" value="OK" id="namenseingabeFertig" type="submit" />
+		</div>
+
+		<button id="startseitebutton" onclick="startseite();document.getElementById('soundButton').play()">Startseite</button>
+	</div>
+
+  	<div id="gameover" style="display:none">
+		<h1>Pech gehabt!</h1>
+		<p>Du warst zu langsam.<p>
+		<p>Willst du es nochmal versuchen?<p>
+			<button id="startbutton2" onclick="neuesSpiel();document.getElementById('soundButton').play();">Neues Spiel</button>
+			<p></p>
+			<button id="highscorebutton2" onclick="startseite();document.getElementById('soundButton').play()">Zur Startseite</button>
+  	</div>
+
+  	<div id="highscoreliste" style="display:none">
+  		<table>
+    		<tr><td>Platz</td><td>Zeit</td><td>Name</td></tr>
+    		<tr><td>1.</td><td id='highscoreZeit1'></td><td id='highscoreName1'></td></tr>
+    		<tr><td>2.</td><td id='highscoreZeit2'></td><td id='highscoreName2'></td></tr>
+    		<tr><td>3.</td><td id='highscoreZeit3'></td><td id='highscoreName3'></td></tr>
+    		<tr><td>4.</td><td id='highscoreZeit4'></td><td id='highscoreName4'></td></tr>
+    		<tr><td>5.</td><td id='highscoreZeit5'></td><td id='highscoreName5'></td></tr>
+    		<tr><td>6.</td><td id='highscoreZeit6'></td><td id='highscoreName6'></td></tr>    		
+    		<tr><td>7.</td><td id='highscoreZeit7'></td><td id='highscoreName7'></td></tr>
+    		<tr><td>8.</td><td id='highscoreZeit8'></td><td id='highscoreName8'></td></tr>
+    		<tr><td>9.</td><td id='highscoreZeit9'></td><td id='highscoreName9'></td></tr>
+    		<tr><td>10.</td><td id='highscoreZeit10'></td><td id='highscoreName10'></td></tr>
+
+  		</table>
+  		<div class="zuruckbutton" onclick="startseite();document.getElementById('soundButton').play()"></div>
+  	</div>
+
+  	<div id="anleitung" style="display:none">
+		<h1>So wird gespielt:</h1>
+		<p>Ordne der Farbe im oberen Bild die passende aus einem der drei kleineren Bilder zu.
+		<p>Achte bei den kleinen Bildern auf das <b>geschriebene</b> Wort und lass dich nicht von der Hintergrundfarbe ablenken.<p>
+
+		<div class="zuruckbutton" onclick="startseite();document.getElementById('soundButton').play()"></div>			 		
+  	</div>
+		
+</div>
+</body>
+</html>
